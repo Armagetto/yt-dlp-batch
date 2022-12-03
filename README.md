@@ -1,6 +1,8 @@
 # yt-dlp-batch
 ## About
-This lets you download videos/audio from YouTube as easy as possible with Yt-dlp+ SponsorBlock in windows.
+This lets you download videos/audio from YouTube as easy as possible with Yt-dlp+ SponsorBlock.
+
+Made for windows.
 
 ## Before using
 
