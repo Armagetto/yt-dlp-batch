@@ -18,7 +18,7 @@ https://github.com/yt-dlp/yt-dlp
 
 
 
-Also change you download folder location here:
+Also change your download folder location here:
 
 ![image](https://user-images.githubusercontent.com/111264581/205464756-a3e5eaa7-7e43-4c39-87fc-47e8d5ee7cb5.png)
 
