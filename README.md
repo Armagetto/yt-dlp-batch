@@ -12,9 +12,9 @@ These need be in the same directory with the .bat file:
 
 Downloads for these .exes can be found here:
 
-https://github.com/FFmpeg/FFmpeg
+https://github.com/FFmpeg/FFmpeg -> direct download: https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-essentials.7z (filles found in bin subfolder)
 
-https://github.com/yt-dlp/yt-dlp
+https://github.com/yt-dlp/yt-dlp -> direct download: https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe)
 
 
 
