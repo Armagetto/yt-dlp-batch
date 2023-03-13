@@ -7,7 +7,24 @@ ECHO  / / /_/ / /_/ // / / /_/ / /_/ /  __/  / /_/ / /_/ / ^|/ ^|/ / / / / / /_/
 ECHO /_/\____/\____//_/  \____/_____/\___/   \____/\____/^|__/^|__/_/ /_/_/\____/\____/\____/\___/_/
 ECHO:
 
-set location=-o "D:\downloads\youtube\%%(title)s-%%(id)s.%%(ext)s"
+For /f "tokens=1-3 delims=/ " %%a in ('date /t') do (set mydate=%%a-%%b-%%c)
+For /f "tokens=1-3 delims=/:/ " %%a in ('time /t') do (set min=%%b)
+For /f "tokens=1-2 delims=/:/ " %%a in ('time /t') do (set hour=%%a)
+For /f "tokens=1-3 delims=/:/ " %%a in ('time /t') do (set AMPM=%%c)
+
+for /f "tokens=* delims=0" %%a in ("%min%") do set min=%%a
+for /f "tokens=* delims=0" %%a in ("%hour%") do set hour=%%a
+set /a fort=%hour%+12
+
+if %AMPM%==PM (
+set ampm_folder_name=%mydate%_%fort%-%min%
+)else (
+set ampm_folder_name=%mydate%_%hour%-%min%
+)
+
+
+set location=-o "D:\downloads\youtube\%%ampm_folder_name%%\%%(title)s-%%(id)s.%%(ext)s"
+
 set /p url=Url: 
 cmd /c yt-dlp.exe --list-formats %url%
 
